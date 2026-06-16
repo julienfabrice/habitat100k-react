@@ -4,19 +4,19 @@ function HeroSlider() {
   const slides = [
     {
       image: "/slide1.jpeg",
-      title: "HABITAT 100K",
+      title: "Technologie BTC-A",
       description:
         "100 000 logements sociaux pour répondre durablement à la crise du logement au Cameroun.",
     },
     {
       image: "/slide2.jpeg",
-      title: "Technologie BTC-A",
+      title: "Vision Nationale",
       description:
         "Des constructions écologiques, durables et adaptées aux réalités locales.",
     },
     {
       image: "/image1.jpg",
-      title: "Vision Nationale",
+      title: "HABITAT 100K",
       description:
         "Un projet structurant porté par AKOK SARL pour bâtir le Cameroun de demain.",
     },
