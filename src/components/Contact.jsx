@@ -27,7 +27,7 @@ function Contact() {
           <h3>Informations</h3>
 
           <p><strong>Adresse :</strong> Yaoundé, Cameroun</p>
-          <p><strong>Téléphone :</strong> +237 XXX XX XX XX</p>
+          <p><strong>Téléphone :</strong> +237 697733236</p>
           <p><strong>Email :</strong> contact@habitat100k.cm</p>
           <p><strong>Horaires :</strong> Lun - Ven (08h - 17h)</p>
 

@@ -849,3 +849,15 @@ button:hover, .btn-souscripteur:hover {
 .housing-slider:hover .housing-track{
   animation-play-state:paused;
 }
+
+
+.btca-text{
+  text-align: justify;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
+}
+.btca-content{
+  width:100%;
+  padding:0 8%;
+}
