@@ -1,37 +1,65 @@
 function HousingTypes() {
+
+  const houses = [
+    {
+      id: 1,
+      title: "T3 SOCIAL - 90 m²",
+      desc: "Logement moderne pour familles avec confort optimal et durabilité.",
+      image: "/slide2_upscayl.png"
+    },
+    {
+      id: 2,
+      title: "T2 ÉCONOMIQUE - 70 m²",
+      desc: "Solution accessible pour jeunes couples et petites familles.",
+      image: "/image1.jpg"
+    },
+    {
+      id: 3,
+      title: "T5 CONFORT - 200 m²",
+      desc: "Grand espace avec salon spacieux et finitions premium.",
+      image: "/image2.jpeg"
+    },
+    {
+      id: 4,
+      title: "T4 CONFORT - 110 m²",
+      desc: "Grand espace avec salon spacieux et finitions premium.",
+      image: "/image3.jpeg"
+    }
+  ];
+
   return (
     <section className="housing-section" id="logements">
 
-      <div className="housing-content">
+      {/* HEADER */}
+      <div className="housing-header">
 
         <span className="section-tag">
           TYPE DE LOGEMENT
         </span>
 
-        <h2>T3 SOCIAL - 90 m²</h2>
-
-        <p>
-          Les logements du projet HABITAT 100K sont conçus pour offrir
-          confort, durabilité et accessibilité aux familles camerounaises.
-        </p>
-
-        <div className="housing-features">
-          <div>✓ 3 Chambres</div>
-          <div>✓ Salon spacieux</div>
-          <div>✓ Cuisine</div>
-          <div>✓ Salle d'eau</div>
-          <div>✓ Terrasse</div>
-          <div>✓ Construction BTC-A</div>
-        </div>
-
-        <a href="#contact" className="housing-btn">
-          Voir les détails
-        </a>
+        <h2>Nos logements disponibles</h2>
 
       </div>
 
-      <div className="housing-image">
-        <img src="/slide2_upscayl.png" alt="Type de logement T3" />
+      {/* CAROUSEL */}
+      <div className="housing-slider">
+
+        <div className="housing-track">
+
+          {houses.concat(houses).map((house, index) => (
+            <div className="housing-card" key={index}>
+
+              <img src={house.image} alt={house.title} />
+
+              <h3>{house.title}</h3>
+
+              <p>{house.desc}</p>
+
+            </div>
+          ))}
+
+        </div>
+
       </div>
 
     </section>
