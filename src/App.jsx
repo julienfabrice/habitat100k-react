@@ -8,6 +8,7 @@ import Partners from "./components/Partners";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
   <>

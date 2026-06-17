@@ -272,7 +272,7 @@ button:hover, .btn-souscripteur:hover {
 }
 .stats-section{
   background:#f5f7fa;
-  padding:80px 8%;
+  padding:40px 8%;
 }
 
 .stats-container{
@@ -307,7 +307,7 @@ button:hover, .btn-souscripteur:hover {
 /* ===== ABOUT ===== */
 /* SECTION */
 .about-section{
-  padding:150px 2%;
+  padding:40px 0%;
   background:#f5f7fa;
 }
 
@@ -423,7 +423,7 @@ button:hover, .btn-souscripteur:hover {
 
 /* SECTION */
 .housing-section{
-  padding:100px 2%;
+  padding:40px 0%;
   background:#f5f7fa;
 }
 
@@ -529,11 +529,19 @@ button:hover, .btn-souscripteur:hover {
 
 /* ===== BTC-A ===== */
 
-.btca-section{
-  padding:100px 8%;
-   background:#f5f7fa;
+.btca-intro-section{
+    padding:10px 7% 20px 7%;
+    background:#f5f7fa;
+    
 }
-
+.btca-intro{
+    text-align: center;
+}
+.btca-section{
+    padding:0 10% 0px;
+    background:#f5f7fa;
+}
+/* HEADER */
 .section-header{
   text-align:center;
   max-width:800px;
@@ -552,22 +560,80 @@ button:hover, .btn-souscripteur:hover {
   line-height:1.8;
 }
 
+/* GRID */
 .btca-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:30px;
 }
 
-.btca-card{
-   background:white;
-  padding:40px 30px;
-  border-radius:20px;
-  text-align:center;
-  transition:0.3s;
+/* ========================= */
+/* 🔥 FLIP CARD SYSTEM */
+/* ========================= */
+
+.flip-card{
+  perspective:1000px;
+  height:260px;
 }
 
-.btca-card:hover{
-  transform:translateY(-10px);
+/* INNER (rotation) */
+.flip-card-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  transition:transform 0.8s ease;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+
+/* ROTATION */
+.flip-card-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style:preserve-3d;
+  animation: autoFlip 6s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes autoFlip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  45% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  95% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* FRONT + BACK */
+.flip-card-front,
+.flip-card-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:20px;
+  backface-visibility:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:40px 30px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FRONT */
+.flip-card-front{
+  background:white;
 }
 
 .btca-icon{
@@ -575,20 +641,31 @@ button:hover, .btn-souscripteur:hover {
   margin-bottom:20px;
 }
 
-.btca-card h3{
+.flip-card-front h3{
   color:#0d3b66;
-  margin-bottom:15px;
 }
 
-.btca-card p{
-  color:#666;
-  line-height:1.7;
+/* BACK */
+.flip-card-back{
+  background:#0d3b66;
+  color:white;
+  transform:rotateY(180deg);
+}
+
+.flip-card-back p{
+  line-height:1.8;
+  font-size:1rem;
+}
+
+/* HOVER EFFECT CLEAN */
+.flip-card:hover{
+  cursor:pointer;
 }
 
 /* ===== PARTNERS ===== */
 
 .partners-section{
-  padding:100px 8%;
+  padding:40px 0%;
   background:#f8f9fa;
 }
 
@@ -625,7 +702,7 @@ button:hover, .btn-souscripteur:hover {
 /* ===== CONTACT ===== */
 
 .contact-section{
-  padding:100px 8%;
+  padding:40px 0%;
   background:#f8f9fa;
 }
 
@@ -849,15 +926,79 @@ button:hover, .btn-souscripteur:hover {
 .housing-slider:hover .housing-track{
   animation-play-state:paused;
 }
-
-
-.btca-text{
-  text-align: justify;
-  line-height: 1.8;
-  color: #555;
-  font-size: 1.1rem;
+.topbar {
+  background: #000;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.btca-content{
-  width:100%;
-  padding:0 8%;
+
+.topbar-marquee {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: defilement 30s linear infinite;
+}
+
+.topbar-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.topbar-social a {
+  color: #fff;
+  font-size: 16px;
+  transition: color .3s;
+}
+
+.topbar-social a:hover {
+  color: #d4af37;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+ }
+
+ .housing-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.housing-price{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.housing-btn{
+    background: #c79b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.housing-btn:hover{
+    background: #a67c1f;
 }

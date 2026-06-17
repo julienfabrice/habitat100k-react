@@ -1,6 +1,27 @@
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedinIn,
+    FaYoutube,
+} from "react-icons/fa";
 function Navbar() {
     return (
         <header id="header">
+            {/* TopBar */}
+            <div className="topbar">
+                <div className="topbar-marquee">
+                    <div className="marquee-content">
+                        🏡 HABITAT 100K • Construire 100 000 logements modernes • Investir avec le BTC-A • Développement durable • Création de 50 000 emplois • Ensemble, bâtissons les villes de demain.
+                    </div>
+                </div>
+
+                <div className="topbar-social">
+                    <a href="#"><FaFacebookF /></a>
+                    <a href="#"><FaInstagram /></a>
+                    <a href="#"><FaLinkedinIn /></a>
+                    <a href="#"><FaYoutube /></a>
+                </div>
+            </div>
             <nav className="navbar">
 
                 <div className="logo">

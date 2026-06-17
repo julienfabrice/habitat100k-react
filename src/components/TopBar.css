@@ -1,0 +1,53 @@
+.topbar {
+  background: red;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-social{
+    width:180px;
+
+    display:flex;
+    justify-content:center;
+    gap:18px;
+
+    z-index:2;
+}
+
+.topbar-social a{
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+.topbar-social a:hover{
+    color:#d4af37;
+}
+
+.topbar-marquee{
+    flex:1;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.marquee-content{
+    display:inline-block;
+    padding-left:100%;
+    animation:defilement 18s linear infinite;
+    font-size:14px;
+    font-weight:500;
+}
+
+@keyframes defilement{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-100%);
+    }
+
+}

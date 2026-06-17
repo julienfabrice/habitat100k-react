@@ -22,6 +22,11 @@ function Partners() {
       name: "Entreprise BTP",
       logo: "/partner4.jpg",
     },
+     {
+      id: 5,
+      name: "Julien Fabrice Menoa Partenaire Informaticien",
+      logo: "/logo_julien.png",
+    },
   ];
 
   return (

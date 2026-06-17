@@ -30,7 +30,7 @@ function Footer() {
         <div className="footer-box">
           <h3>Contact</h3>
           <p>Yaoundé, Cameroun</p>
-          <p>+237 XXX XX XX XX</p>
+          <p>+237 697733236</p>
           <p>contact@habitat100k.cm</p>
         </div>
 
