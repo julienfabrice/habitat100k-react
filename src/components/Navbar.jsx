@@ -17,7 +17,7 @@ function Navbar() {
         </ul>
 
         <a href="#souscription" className="btn-souscripteur">
-          Souscrir Maintenant
+          Souscrire Maintenant
         </a>
 
       </nav>

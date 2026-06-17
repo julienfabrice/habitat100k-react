@@ -9,13 +9,13 @@ function HeroSlider() {
         "100 000 logements sociaux pour répondre durablement à la crise du logement au Cameroun.",
     },
     {
-      image: "/slide2.jpeg",
+      image: "/slide2_upscayl.png",
       title: "Vision Nationale",
       description:
         "Des constructions écologiques, durables et adaptées aux réalités locales.",
     },
     {
-      image: "/image1.jpg",
+      image: "/image1_upscayl.png",
       title: "HABITAT 100K",
       description:
         "Un projet structurant porté par AKOK SARL pour bâtir le Cameroun de demain.",
