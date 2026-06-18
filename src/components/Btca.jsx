@@ -1,4 +1,5 @@
 function Btca() {
+
   const avantages = [
     {
       icon: "♻️",
@@ -33,68 +34,82 @@ function Btca() {
   ];
 
   return (
+    <>
 
-    
-    <section className="btca-section" id="btca">
- <section className="btca-intro-section">
+      {/* Section d'introduction */}
+      <section className="btca-intro-section">
 
-    <div className="btca-intro">
+        <div className="btca-intro">
 
-        <span className="section-tag">
+          <span className="section-tag">
             TECHNOLOGIE BTC-A
-        </span>
+          </span>
 
-        <h2>Pourquoi choisir les BTC-A ?</h2>
+          <h2>Pourquoi choisir les BTC-A ?</h2>
 
-        <p>
-            La Technologie BTC-A : Construire Autrement
-Le Bloc de Terre Compressé Autobloquantes (BTC-A) est une innovation de construction qui révolutionne l'habitat en Afrique. Fabriqué à partir de la terre locale compressée et stabilisée, ce bloc offre une alternative écologique, économique et durable aux matériaux de construction conventionnels.
-Comment ça fonctionne ?
-La terre extraite localement est mélangée à un faible pourcentage de ciment (5 à 10%), puis compressée mécaniquement sous haute pression. Le résultat : un bloc solide, précis et autobloquant — c'est-à-dire que les blocs s'emboîtent parfaitement sans nécessiter de mortier entre les joints.
-Les avantages clés :<br></br>
-🌱 Écologique — matériau naturel, empreinte carbone réduite<br></br>
-💰 Économique — coût de construction réduit de 30 à 40% par rapport au parpaing classique<br></br>
-🏗️ Rapide — pose sans mortier, chantier accéléré<br></br>
-🌡️ Confortable — excellente isolation thermique naturelle<br></br>
-🔧 Local — production sur site, valorisation des ressources camerounaises<br></br>
-        </p>
+          <p>
+            La Technologie BTC-A : Construire Autrement.<br /><br />
 
-    </div>
+            Le Bloc de Terre Compressée Autobloquante (BTC-A) est une innovation de construction qui révolutionne l'habitat en Afrique. Fabriqué à partir de la terre locale compressée et stabilisée, ce bloc offre une alternative écologique, économique et durable aux matériaux de construction conventionnels.
+            <br /><br />
 
-</section>
+            <strong>Comment ça fonctionne ?</strong><br />
+            La terre extraite localement est mélangée à un faible pourcentage de ciment (5 à 10%), puis compressée mécaniquement sous haute pression. Le résultat est un bloc solide, précis et autobloquant, c'est-à-dire que les blocs s'emboîtent parfaitement sans nécessiter de mortier entre les joints.
+            <br /><br />
 
-<section className="btca-section" id="btca">
+            <strong>Les avantages clés :</strong><br />
+            🌱 Écologique — matériau naturel, empreinte carbone réduite.<br />
+            💰 Économique — coût réduit de 30 à 40 % par rapport au parpaing classique.<br />
+            🏗️ Rapide — pose sans mortier, chantier accéléré.<br />
+            🌡️ Confortable — excellente isolation thermique naturelle.<br />
+            🔧 Local — production sur site et valorisation des ressources camerounaises.
+          </p>
 
-    <div className="btca-grid">
-        {/* Tes cartes */}
-    </div>
+        </div>
 
-</section>
-      <div className="btca-grid">
+      </section>
 
-        {avantages.map((item, index) => (
-          <div className="flip-card" key={index}>
-            
-            <div className="flip-card-inner">
+      {/* Section des cartes */}
+      <section className="btca-section" id="btca">
 
-              {/* FACE AVANT */}
-              <div className="flip-card-front">
-                <div className="btca-icon">{item.icon}</div>
-                <h3>{item.titre}</h3>
-              </div>
+        <div className="btca-grid">
 
-              {/* FACE ARRIÈRE */}
-              <div className="flip-card-back">
-                <p>{item.texte}</p>
+          {avantages.map((item, index) => (
+
+            <div
+              className={`flip-card ${index < 3 ? "flip-group-a" : "flip-group-b"}`}
+              key={index}
+            >
+
+              <div className="flip-card-inner">
+
+                {/* Face avant */}
+                <div className="flip-card-front">
+
+                  <div className="btca-icon">{item.icon}</div>
+
+                  <h3>{item.titre}</h3>
+
+                </div>
+
+                {/* Face arrière */}
+                <div className="flip-card-back">
+
+                  <p>{item.texte}</p>
+
+                </div>
+
               </div>
 
             </div>
 
-          </div>
-        ))}
+          ))}
 
-      </div>
-    </section>
+        </div>
+
+      </section>
+
+    </>
   );
 }
 
