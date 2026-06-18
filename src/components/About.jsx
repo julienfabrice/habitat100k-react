@@ -33,7 +33,7 @@ function About() {
           <p>
             Implanté dans la banlieue de Yaoundé, ce programme prévoit la
             construction de 100 000 logements sociaux en Briques de Terre
-            Compressées Améliorées (BTC-A), intégrant les réseaux VRD et
+            Compressées Autobloquantes (BTC-A), intégrant les réseaux VRD et
             équipements collectifs nécessaires.
           </p>
 

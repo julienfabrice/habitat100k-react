@@ -5,6 +5,7 @@ import Stats from "./components/Stats";
 import HousingTypes from "./components/HousingTypes";
 import Btca from "./components/Btca";
 import Partners from "./components/Partners";
+import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -19,6 +20,7 @@ function App() {
   <HousingTypes />
   <Btca />
   <Partners />
+  <Testimonials />
   <Contact />
   <Footer />
 </>
