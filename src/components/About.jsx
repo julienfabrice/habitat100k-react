@@ -25,16 +25,13 @@ function About() {
         <div className="about-content">
 
           <p>
-            Le projet HABITAT 100K est une initiative structurante portée
-            par AKOK SARL visant à répondre durablement à la crise du logement
-            au Cameroun.
-          </p>
+            Le projet HABITAT 100K est une initiative nationale portée par AKOK SARL, 
+            conçue pour contribuer durablement à la réduction du déficit de logements au Cameroun.
 
-          <p>
-            Implanté dans la banlieue de Yaoundé, ce programme prévoit la
-            construction de 100 000 logements sociaux en Briques de Terre
-            Compressées Autobloquantes (BTC-A), intégrant les réseaux VRD et
-            équipements collectifs nécessaires.
+            À travers la réalisation de 100 000 logements sociaux en Briques de Terre Compressées Autobloquantes (BTC-A), 
+            répartis sur l'ensemble du territoire national, le projet ambitionne de favoriser un développement urbain durable. 
+            Il intègre les infrastructures de voirie et réseaux divers (VRD) ainsi que les équipements collectifs indispensables
+             à la création de quartiers modernes, inclusifs et résilients.
           </p>
 
           <div className="about-features">

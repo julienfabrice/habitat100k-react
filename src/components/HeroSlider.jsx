@@ -12,7 +12,7 @@ function HeroSlider() {
       image: "/slide2_upscayl.png",
       title: "Vision Nationale",
       description:
-        "Des constructions écologiques, durables et adaptées aux réalités locales.",
+        "L'habitat digne, à la portée de tous !",
     },
     {
       image: "/image1_upscayl.png",
